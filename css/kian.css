@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: "Cinzel", sans-serif;
+    padding-top: 50px; /* Isso evita que o conteúdo fique atrás da bar */
+    background: linear-gradient(to bottom, #000000, #FFD700); /* Gradiente de fundo de preto para dourado */
+    background-size: cover; /* Garante que o gradiente cubra toda a tela */
+    background-attachment: fixed; /* Fixa o gradiente enquanto a página rola */
+    overflow: hidden; /* Impede rolagem */
+    margin: 0; /* Remove qualquer margem adicional */
+}
+
+/* Secção do conteúdo */
+section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* Estilos da bar */
+.bar {
+    background-color: #000000;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.bar ul li {
+    margin: 0 15px;
+}
+
+.bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+
+.bar ul li a:hover {
+    background-color: #360808;
+    border-radius: 4px;
+}
+
+/* Logo */
+.my-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-image-container img {
+    max-width: 100%;
+    height: auto;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.my-image-container2 {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.my-image-container2 img {
+    width: 50%;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo do texto */
+.text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.title {
+    padding: 4px;
+    color: white;
+}
+
+.text-conteudo {
+    line-height: 1.6;
+    font-size: 15px;
+    color: white;
+    padding: 5px;
+}
+
+.text {
+    width: 300px;
+    display: flex;
+    text-align: left;
+    justify-content: right;
+}
+
+/* Estilo do Canvas */
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca o canvas atrás de todo o conteúdo */
+}
+ h1 {
+    color: white;
+    font-family: "Cinzel", sans-serif;
+ }
+
+ .typing-effect {
+    font-size: 1.8rem;
+    color:  white; /* Cor dourada para combinar com as bolhas */
+    font-family: 'Cinzel', serif;
+    border-right: 2px solid black; /* Cursor piscante */
+    animation: blink-cursor 0.7s steps(2, start) infinite;
+}
+
+@keyframes blink-cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+

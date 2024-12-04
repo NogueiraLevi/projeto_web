@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Cinzel", sans-serif;
+    padding-top: 50px;
+    /* Isso evita que o conteúdo fique atrás da navbar */
+    background-color: #360808;
+    height: 100vh;
+}
+
+section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* Adiciona uma transição suave ao hover dos links da navbar */
+.navbar ul li a {
+    transition: background-color 0.3s;
+}
+
+.navbar {
+    background-color: #000000;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    /* Defina uma altura fixa */
+    padding: 10px 0;
+    z-index: 1000;
+    /* Garante que a navbar fique acima de outros elementos */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Centraliza verticalmente os itens dentro da navbar */
+    height: 100%;
+    /* Faz os itens ocuparem a altura total da navbar */
+}
+
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+
+.navbar ul li a:hover {
+    background-color: #360808;
+    border-radius: 4px;
+}
+
+
+/* Logo */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    width: 400px;
+    /* Ajuste o tamanho conforme necessário */
+    border-radius: 10px;
+    /* Apenas para dar um visual agradável */
+}
+
+.content {
+    display: flex;
+}
+
+/* texto */
+.text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    .title {
+        padding: 4px;
+        color: white;
+    }
+    .text-content{
+        line-height: 1.6;
+        /* Ajusta o espaçamento entre linhas para melhorar a legibilidade */
+        font-size: 15px;
+        color: white;
+        /* Cor padrão do texto */
+        padding: 5px;
+    }
+}
+
+
+
